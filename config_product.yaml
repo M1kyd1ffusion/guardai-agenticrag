@@ -1,0 +1,129 @@
+# ==========================================================
+# 产品线配置：GuardAI · 教材为准的教育答疑系统
+# ⚠️ 独立于论文的 config.yaml，两套互不引用：
+#    论文 = deepseek 生成 + glm 判分（十二月还要复跑，别动它）
+#    产品 = glm-5.3-flash 生成 + kimi 判分（异族 ✅，2026-11-09 拍板）
+# ==========================================================
+
+project:
+  name: guardai
+  seed: 20261109
+  snapshot_note: "产品线实验期 2026-11-09 起；模型版本写入结果文件每行 model 字段"
+
+paths:
+  corpus_raw:      data/corpus/raw
+  corpus_original: data/corpus/original
+  corpus_altered:  data/corpus/altered
+  index_dir:       data/index            # 占位；产品实际加载 data/index_expert（见 src/router.py）
+  questions:       data/questions
+  results:         data/results
+  cache:           data/cache_product    # 产品独立缓存，与论文的 data/cache 分开
+
+corpus:
+  subjects: [science, literature, history]
+  encoding: utf-8
+
+chunking:
+  strategy: fixed_tokens
+  sizes: [512]
+  overlap_tokens: 0
+  min_chunk_tokens: 30
+
+embedding:
+  model: BAAI/bge-base-en-v1.5
+  device: cpu
+  batch_size: 32
+  normalize: true
+  query_instruction: "Represent this sentence for searching relevant passages: "
+  local_files_only: true
+
+retrieval:
+  backend: numpy
+  mode: hybrid
+  rrf_k: 60
+  rerank:
+    enabled: false
+    model: BAAI/bge-reranker-v2-m3
+    candidates_in: 50
+    keep_top: 20
+  budget:
+    enabled: true
+    max_context_tokens: 2000     # 单源直答预算；会诊时**每个源各自**装满这个预算（并列不合并）
+    max_segments: 30
+    estimate_chars_per_token: 4.0
+
+# ---------------------------------------------------------
+# 生成端：glm-5.3-flash
+# 2026-11-09 实测：flash 也带思考（"回答OK"的提示产生 93 个思考 token）。
+# reasoning_effort=low 控制思考强度；若厂商拒绝该参数，ModelClient 会自动去掉重试。
+# ---------------------------------------------------------
+generation:
+  providers:
+    glm:
+      base_url: https://open.bigmodel.cn/api/paas/v4
+      model: glm-5.3-flash
+      env_key: ZHIPU_API_KEY
+      reasoning_effort: low
+    kimi:
+      base_url: https://api.moonshot.cn/v1
+      model: kimi-k3
+      env_key: MOONSHOT_API_KEY
+      # ⚠️ kimi-k3 只接受 temperature=1（2026-11-09 实测 400：invalid temperature）。
+      #    强制思考模型不开放温度；判分标签是单选词，温度 1 的影响由 judgeAB 一致率检验兜底。
+      temperature: 1
+      # ❌ 不要用 kimi-k2.6（2026-12 官方下线）；k2.7-code 是代码特化。
+      # 账户实际可用：k2.6 / k2.7-code(×2) / k3 / k3.1-pro(×2)
+  active: [glm]
+  temperature: 0.0
+  # 上限必须盖住「思考链 + 答案」：flash 思考几十到几百 token，512 会截断答案
+  max_output_tokens: 2048
+  thinking: false
+  timeout_sec: 120
+  max_retries: 3
+  cache_enabled: true
+  # 产品首轮不跑 PK 裸考路径（省一半钱）；PK/CK 归因是论文的活，产品要的是端到端答对率
+  dual_path:
+    enabled: false
+    persist_raw: true
+  strategies: [S1]
+  s4_samples: 3
+
+# ---------------------------------------------------------
+# 判题端：kimi-k3（默认）；ab_model 用于 50 条 A/B 裁决选型
+# 原则（10-26 论文侧拍板沿用）：判分要准，这里省钱是假省钱；
+# 但"简单判断要不要旗舰"用 A/B 实验裁决（run_product_eval.py judgeAB）。
+# ---------------------------------------------------------
+evaluation:
+  judge:
+    provider: kimi
+    model: kimi-k3
+    temperature: 0.0
+    max_output_tokens: 2048
+    ab_model: kimi-k3.1-pro-highspeed
+  refusal_keywords_zh: ["我不知道", "未提", "没有相关", "无法回答", "outside", "not covered", "context does not"]
+  refusal_keywords_en: ["i don't know", "not mentioned", "does not contain", "no information", "cannot answer"]
+  human_check_ratio: 0.10
+  swap_abba: true
+
+product:
+  # 分诊路由阈值（与 src/router.py RouterParams 默认一致；实测校准记录见 06 排期文档 §8）
+  budget_tokens: 2000
+  # 兜底态不调生成 API，直接给固定话术（产品行为，不是模型行为）
+  refusal_template_zh: "这道题超出了当前教材库的范围（已接入的 9 个源里没有找到可靠依据）。建议核对课程指定教材，或向老师确认。"
+
+# ---------------------------------------------------------
+# 安全护栏（产品功能，2026-11-14；不参与论文实验，不影响任何既有指标）
+# 设计：词表提级 → LLM 分级 → 会话累积 → 三档分流 →（L3）异步告警
+# ⚠️ hotline / counsellor 上线前必须换成学校真实资源；留占位符比编号码安全。
+# ---------------------------------------------------------
+safety:
+  enabled: true
+  max_history_turns: 3          # 判定时带最近几轮原话（单轮判定会被分轮试探绕过）
+  session_window: 3             # 累积窗口
+  session_escalate_after: 2     # 最近窗口内 ≥2 轮达到 L2 → 升到 L3
+  output_check: true            # 输出侧复核（答案是否含可操作的自伤方法等）
+  alert_timeout_sec: 3          # 告警超时；失败只落盘、不影响学生收回复
+  # alert_webhook: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx"
+  # 也可用环境变量 SAFETY_ALERT_WEBHOOK（优先），避免把 webhook 写进文件
+  hotline: "（请填写本地心理援助热线，如全国统一心理援助热线 12356）"
+  counsellor: "（请填写学校心理咨询中心电话与地址）"

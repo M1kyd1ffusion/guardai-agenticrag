@@ -1,0 +1,100 @@
+{"qid": "out-001", "question": "What is the plot of Melville's novel Typee?", "category": "same_author_other_works", "key_terms": ["typee"]}
+{"qid": "out-002", "question": "What does Bartleby the scrivener keep saying when asked to work?", "category": "same_author_other_works", "key_terms": ["bartleby"]}
+{"qid": "out-003", "question": "How does the story of Billy Budd end?", "category": "same_author_other_works", "key_terms": ["billy budd"]}
+{"qid": "out-004", "question": "What is Melville's novel Omoo about?", "category": "same_author_other_works", "key_terms": ["omoo"]}
+{"qid": "out-005", "question": "What is the plot of Benito Cereno?", "category": "same_author_other_works", "key_terms": ["benito cereno"]}
+{"qid": "out-006", "question": "How does the March family story continue in Alcott's Little Men?", "category": "same_author_other_works", "key_terms": ["little men"]}
+{"qid": "out-007", "question": "What happens to Rose Campbell in Alcott's Eight Cousins?", "category": "same_author_other_works", "key_terms": ["eight cousins", "rose campbell"]}
+{"qid": "out-008", "question": "What is Alcott's An Old-Fashioned Girl about?", "category": "same_author_other_works", "key_terms": ["old-fashioned girl"]}
+{"qid": "out-009", "question": "What are the fairy stories in Alcott's Flower Fables like?", "category": "same_author_other_works", "key_terms": ["flower fables"]}
+{"qid": "out-010", "question": "What did Alcott write about her Civil War nursing in Hospital Sketches?", "category": "same_author_other_works", "key_terms": ["hospital sketches"]}
+{"qid": "out-011", "question": "What does Paine argue in The Age of Reason?", "category": "same_author_other_works", "key_terms": ["age of reason"]}
+{"qid": "out-012", "question": "What are the main claims of Paine's Rights of Man?", "category": "same_author_other_works", "key_terms": ["rights of man"]}
+{"qid": "out-013", "question": "What did Paine write in his pamphlet The American Crisis?", "category": "same_author_other_works", "key_terms": ["american crisis"]}
+{"qid": "out-014", "question": "What is the central idea of Keynes's General Theory of Employment, Interest and Money?", "category": "same_author_other_works", "key_terms": ["general theory of employment"]}
+{"qid": "out-015", "question": "What did Keynes write about Indian currency and finance?", "category": "same_author_other_works", "key_terms": ["indian currency"]}
+{"qid": "out-016", "question": "What does Keynes say in his Treatise on Probability?", "category": "same_author_other_works", "key_terms": ["treatise on probability"]}
+{"qid": "out-017", "question": "What does Douglass describe in My Bondage and My Freedom?", "category": "same_author_other_works", "key_terms": ["my bondage and my freedom"]}
+{"qid": "out-018", "question": "Which events are covered in Douglass's later book Life and Times?", "category": "same_author_other_works", "key_terms": ["life and times of frederick"]}
+{"qid": "out-019", "question": "What did Peary write in Secrets of Polar Travel?", "category": "same_author_other_works", "key_terms": ["secrets of polar travel"]}
+{"qid": "out-020", "question": "What did Alcott write under the pen name A. M. Barnard?", "category": "same_author_other_works", "key_terms": ["barnard", "mephistopheles"]}
+{"qid": "out-021", "question": "What is the ideal gas law in physics?", "category": "textbook_siblings", "key_terms": ["ideal gas"]}
+{"qid": "out-022", "question": "What is Newton's second law of motion?", "category": "textbook_siblings", "key_terms": ["second law of motion"]}
+{"qid": "out-023", "question": "How is the periodic table organized in chemistry?", "category": "textbook_siblings", "key_terms": ["periodic table"]}
+{"qid": "out-024", "question": "What causes the phases of the moon?", "category": "textbook_siblings", "key_terms": ["phases of the moon"]}
+{"qid": "out-025", "question": "How do tectonic plates cause earthquakes?", "category": "textbook_siblings", "key_terms": ["tectonic"]}
+{"qid": "out-026", "question": "What is the speed of light in a vacuum?", "category": "textbook_siblings", "key_terms": ["speed of light"]}
+{"qid": "out-027", "question": "What is Ohm's law?", "category": "textbook_siblings", "key_terms": ["ohm"]}
+{"qid": "out-028", "question": "What is the Bohr model of the atom?", "category": "textbook_siblings", "key_terms": ["bohr model"]}
+{"qid": "out-029", "question": "What is the difference between mass and weight in physics?", "category": "textbook_siblings", "key_terms": ["mass and weight"]}
+{"qid": "out-030", "question": "What is the difference between a physical change and a chemical change?", "category": "textbook_siblings", "key_terms": ["physical change"]}
+{"qid": "out-031", "question": "What causes a solar eclipse?", "category": "textbook_siblings", "key_terms": ["solar eclipse"]}
+{"qid": "out-032", "question": "How does the heart pump blood through the body?", "category": "textbook_siblings", "key_terms": ["pump blood"]}
+{"qid": "out-033", "question": "How many chambers does the human heart have?", "category": "textbook_siblings", "key_terms": ["chambers of the human heart"]}
+{"qid": "out-034", "question": "What is the difference between weather and climate?", "category": "textbook_siblings", "key_terms": ["weather and climate"]}
+{"qid": "out-035", "question": "How do you solve a quadratic equation by completing the square?", "category": "math_cs", "key_terms": ["quadratic", "completing the square"]}
+{"qid": "out-036", "question": "What is the derivative of x squared?", "category": "math_cs", "key_terms": ["derivative"]}
+{"qid": "out-037", "question": "What is the Pythagorean theorem?", "category": "math_cs", "key_terms": ["pythagorean"]}
+{"qid": "out-038", "question": "What is an eigenvalue of a matrix?", "category": "math_cs", "key_terms": ["eigenvalue"]}
+{"qid": "out-039", "question": "What is the integral of one over x dx?", "category": "math_cs", "key_terms": ["integral"]}
+{"qid": "out-040", "question": "What is the prime factorization of sixty?", "category": "math_cs", "key_terms": ["prime factorization"]}
+{"qid": "out-041", "question": "What does a p-value mean in hypothesis testing?", "category": "math_cs", "key_terms": ["p-value", "hypothesis testing"]}
+{"qid": "out-042", "question": "What is standard deviation and how is it computed?", "category": "math_cs", "key_terms": ["standard deviation"]}
+{"qid": "out-043", "question": "How do you prove two triangles are congruent?", "category": "math_cs", "key_terms": ["congruent"]}
+{"qid": "out-044", "question": "What is the binomial theorem?", "category": "math_cs", "key_terms": ["binomial theorem"]}
+{"qid": "out-045", "question": "How does a for loop work in Python?", "category": "math_cs", "key_terms": ["for loop", "python"]}
+{"qid": "out-046", "question": "What is the difference between a stack and a queue in data structures?", "category": "math_cs", "key_terms": ["stack and a queue", "data structures"]}
+{"qid": "out-047", "question": "What is a React component and its state?", "category": "math_cs", "key_terms": ["react component", "react state"]}
+{"qid": "out-048", "question": "What does a SQL SELECT statement do?", "category": "math_cs", "key_terms": ["sql select"]}
+{"qid": "out-049", "question": "What is the time complexity of binary search?", "category": "math_cs", "key_terms": ["binary search", "time complexity"]}
+{"qid": "out-050", "question": "How does garbage collection work in managed programming languages?", "category": "math_cs", "key_terms": ["garbage collection"]}
+{"qid": "out-051", "question": "What is a certificate of deposit at a bank?", "category": "econ_finance", "key_terms": ["certificate of deposit"]}
+{"qid": "out-052", "question": "What is the Laffer curve in tax policy?", "category": "econ_finance", "key_terms": ["laffer"]}
+{"qid": "out-053", "question": "What is a stock market index like the S and P 500?", "category": "econ_finance", "key_terms": ["stock market index"]}
+{"qid": "out-054", "question": "How do credit scores work?", "category": "econ_finance", "key_terms": ["credit score"]}
+{"qid": "out-055", "question": "How does a central bank set interest rates?", "category": "econ_finance", "key_terms": ["central bank"]}
+{"qid": "out-056", "question": "What is the difference between a stock and a bond?", "category": "econ_finance", "key_terms": ["a stock and a bond"]}
+{"qid": "out-057", "question": "What is a mortgage amortization schedule?", "category": "econ_finance", "key_terms": ["amortization"]}
+{"qid": "out-058", "question": "How do floating exchange rates work in currency markets?", "category": "econ_finance", "key_terms": ["exchange rates"]}
+{"qid": "out-059", "question": "What is the circle of fifths in music theory?", "category": "humanities_arts", "key_terms": ["circle of fifths"]}
+{"qid": "out-060", "question": "Who painted the Mona Lisa and where does it hang?", "category": "humanities_arts", "key_terms": ["mona lisa"]}
+{"qid": "out-061", "question": "What is pointillism in painting?", "category": "humanities_arts", "key_terms": ["pointillism"]}
+{"qid": "out-062", "question": "What is the difference between a metaphor and a simile?", "category": "humanities_arts", "key_terms": ["metaphor and a simile"]}
+{"qid": "out-063", "question": "How do you conjugate French verbs in the passe compose?", "category": "humanities_arts", "key_terms": ["conjugate"]}
+{"qid": "out-064", "question": "What is the rule against hearsay in a court of law?", "category": "humanities_arts", "key_terms": ["hearsay"]}
+{"qid": "out-065", "question": "What does the legal term tort mean?", "category": "humanities_arts", "key_terms": ["legal term tort"]}
+{"qid": "out-066", "question": "What is iambic pentameter in poetry?", "category": "humanities_arts", "key_terms": ["iambic pentameter"]}
+{"qid": "out-067", "question": "How long is a marathon race in kilometers?", "category": "sports_everyday", "key_terms": ["marathon"]}
+{"qid": "out-068", "question": "What is a home run in baseball?", "category": "sports_everyday", "key_terms": ["home run"]}
+{"qid": "out-069", "question": "What is the offside rule in soccer?", "category": "sports_everyday", "key_terms": ["offside"]}
+{"qid": "out-070", "question": "How does a refrigerator keep food cold?", "category": "sports_everyday", "key_terms": ["refrigerator"]}
+{"qid": "out-071", "question": "How does a microwave oven heat food?", "category": "sports_everyday", "key_terms": ["microwave oven"]}
+{"qid": "out-072", "question": "What is the fuel efficiency of a hybrid car?", "category": "sports_everyday", "key_terms": ["hybrid car"]}
+{"qid": "out-073", "question": "How does a dishwasher work?", "category": "sports_everyday", "key_terms": ["dishwasher"]}
+{"qid": "out-074", "question": "What is the best way to remove a coffee stain from a shirt?", "category": "sports_everyday", "key_terms": ["coffee stain"]}
+{"qid": "out-075", "question": "How does a smartphone touchscreen sense finger input?", "category": "modern_life", "key_terms": ["touchscreen"]}
+{"qid": "out-076", "question": "What is Bitcoin and how does blockchain mining work?", "category": "modern_life", "key_terms": ["bitcoin", "blockchain"]}
+{"qid": "out-077", "question": "How does Wi-Fi transmit data through the air?", "category": "modern_life", "key_terms": ["wi-fi"]}
+{"qid": "out-078", "question": "What is ChatGPT and how was it trained?", "category": "modern_life", "key_terms": ["chatgpt"]}
+{"qid": "out-079", "question": "How do self-driving cars navigate traffic?", "category": "modern_life", "key_terms": ["self-driving"]}
+{"qid": "out-080", "question": "Which albums has Taylor Swift released recently?", "category": "modern_life", "key_terms": ["taylor swift"]}
+{"qid": "out-081", "question": "What is the plot of the Harry Potter series?", "category": "modern_life", "key_terms": ["harry potter"]}
+{"qid": "out-082", "question": "How does the Instagram feed algorithm rank posts?", "category": "modern_life", "key_terms": ["instagram"]}
+{"qid": "out-083", "question": "What is a podcast and how do you produce one?", "category": "modern_life", "key_terms": ["podcast"]}
+{"qid": "out-084", "question": "What did the Apollo moon missions bring back from the lunar surface?", "category": "modern_life", "key_terms": ["apollo", "lunar surface"]}
+{"qid": "out-085", "question": "What event triggered the First World War?", "category": "history_geography", "key_terms": ["first world war"]}
+{"qid": "out-086", "question": "What was the Berlin Wall and when did it fall?", "category": "history_geography", "key_terms": ["berlin wall"]}
+{"qid": "out-087", "question": "When was the Magna Carta sealed?", "category": "history_geography", "key_terms": ["magna carta"]}
+{"qid": "out-088", "question": "Who was Genghis Khan and what did he conquer?", "category": "history_geography", "key_terms": ["genghis"]}
+{"qid": "out-089", "question": "What is the capital of Australia?", "category": "history_geography", "key_terms": ["capital of australia"]}
+{"qid": "out-090", "question": "Which desert is the largest hot desert on Earth?", "category": "history_geography", "key_terms": ["hot desert"]}
+{"qid": "out-091", "question": "What is the highest mountain above sea level?", "category": "history_geography", "key_terms": ["highest mountain"]}
+{"qid": "out-092", "question": "Which country gifted the Statue of Liberty to America?", "category": "history_geography", "key_terms": ["statue of liberty"]}
+{"qid": "out-093", "question": "How do computer viruses spread between machines?", "category": "alias_trap", "key_terms": ["computer virus"], "note": "virus∈micro 别名 → 预期误路由到 Microbiology-WEB"}
+{"qid": "out-094", "question": "Why is it common sense to keep an emergency fund?", "category": "alias_trap", "key_terms": ["emergency fund"], "note": "common sense→Paine 别名，问的是理财常识"}
+{"qid": "out-095", "question": "How would Keynes have felt about Bitcoin?", "category": "alias_trap", "key_terms": ["felt about bitcoin"], "note": "keynes→ep 别名，问的是不存在于书中的观点"}
+{"qid": "out-096", "question": "What does the slang term white whale mean outside literature?", "category": "alias_trap", "key_terms": ["slang term"], "note": "white whale→moby 别名，问的是现代俚语义"}
+{"qid": "out-097", "question": "In which novel does Captain Nemo's submarine reach the North Pole?", "category": "alias_trap", "key_terms": ["captain nemo", "nautilus"], "note": "north pole→np 别名，问的是《海底两万里》"}
+{"qid": "out-098", "question": "How can a tourist travel to the North Pole today?", "category": "alias_trap", "key_terms": ["tourist"], "note": "north pole→np 别名，问的是现代旅行"}
+{"qid": "out-099", "question": "What did Matthew Henson write in his own book about his polar journey?", "category": "alias_trap", "key_terms": ["negro explorer"], "note": "henson→np 别名，问的是 Henson 自己的书（不在库内）"}
+{"qid": "out-100", "question": "How much does a first edition of Moby Dick sell for at auction?", "category": "alias_trap", "key_terms": ["first edition", "auction"], "note": "moby dick→md 别名，问的是收藏市场行情"}

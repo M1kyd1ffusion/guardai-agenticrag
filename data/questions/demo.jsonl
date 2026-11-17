@@ -1,0 +1,5 @@
+{"qid": "demo-1", "question": "Why do Gram-positive bacteria stain purple?", "reference": "Because they have a thick peptidoglycan layer."}
+{"qid": "demo-2", "question": "Which genus is identified using acid-fast staining?", "reference": "Mycobacterium."}
+{"qid": "demo-3", "question": "Who developed the Gram stain and in what year?", "reference": "Hans Christian Gram, in 1884."}
+{"qid": "demo-4", "question": "How does penicillin affect bacterial cells?", "reference": "It inhibits peptidoglycan cross-linking, weakening the wall and causing lysis."}
+{"qid": "demo-5", "question": "Why are Mycoplasma species resistant to certain antibiotics?", "reference": "Because they lack a cell wall entirely."}

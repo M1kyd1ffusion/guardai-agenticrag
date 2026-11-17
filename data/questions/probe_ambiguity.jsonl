@@ -1,0 +1,50 @@
+{"qid": "amb-001", "question": "What traces of Franklin were found north of Smith Sound?", "gold": "history/north_pole", "entity": "Franklin", "note": "Franklin 双源：np=John Franklin 探险队 / bf=本杰明；alias franklin→benjamin_franklin 预期误路由"}
+{"qid": "amb-002", "question": "Where did the Lady Franklin Bay expedition build its station?", "gold": "history/north_pole", "entity": "Franklin", "note": "同上，Franklin 陷阱"}
+{"qid": "amb-003", "question": "In what year did Peary make his brief summer excursion to Greenland?", "gold": "history/north_pole", "entity": "Greenland", "note": "Greenland 双源 np:81/md:36；peary alias→np 正确"}
+{"qid": "amb-004", "question": "What did the 1886 excursion to Greenland arouse in Peary?", "gold": "history/north_pole", "entity": "Greenland", "note": "同上"}
+{"qid": "amb-005", "question": "Which people lived along the coast from Cape York to Etah?", "gold": "history/north_pole", "entity": "Cape", "note": "Cape 三源 np:288/md:38/ph:12"}
+{"qid": "amb-006", "question": "What did Peary say about Cook's claim to have reached the pole?", "gold": "history/north_pole", "entity": "Cook", "note": "Cook 双源：np=Dr. Cook 探险家 / md=船上厨师；词面强陷阱"}
+{"qid": "amb-007", "question": "Which member of the polar expedition came from New York City?", "gold": "history/north_pole", "entity": "New York", "note": "New York 四源 bf:37/np:26/fd:8/mb:6"}
+{"qid": "amb-008", "question": "At whose printing house did Franklin first work after reaching Philadelphia?", "gold": "history/benjamin_franklin", "entity": "Franklin", "note": "alias 正确样本（Keimer）"}
+{"qid": "amb-009", "question": "What newspaper did Franklin's brother James publish?", "gold": "history/benjamin_franklin", "entity": "Franklin", "note": "alias 正确样本（New England Courant）"}
+{"qid": "amb-010", "question": "Which virtue did Franklin find the hardest to keep in his plan of moral perfection?", "gold": "history/benjamin_franklin", "entity": "Franklin", "note": "alias 正确样本（Order）"}
+{"qid": "amb-011", "question": "Why did Franklin first travel to London as a young man?", "gold": "history/benjamin_franklin", "entity": "London", "note": "London 七源 bf:53 最高"}
+{"qid": "amb-012", "question": "Why did Franklin run away from his apprenticeship in Boston?", "gold": "history/benjamin_franklin", "entity": "Franklin", "note": "alias 正确样本"}
+{"qid": "amb-013", "question": "What did Franklin's club of young tradesmen, the Junto, do?", "gold": "history/benjamin_franklin", "entity": "Franklin", "note": "alias 正确样本"}
+{"qid": "amb-014", "question": "What did the beloved friend from New Bedford prevail on the narrator to do?", "gold": "history/frederick_douglass", "entity": "New Bedford", "note": "New Bedford 双源 fd:19/md:16；md 词面也强"}
+{"qid": "amb-015", "question": "What was the name of the steamboat that carried the narrator toward Newport?", "gold": "history/frederick_douglass", "entity": "John", "note": "John 六源（John W. Richmond）"}
+{"qid": "amb-016", "question": "What did the songs of the slaves on the plantation testify to?", "gold": "history/frederick_douglass", "entity": "slaves", "note": "通用词锚点"}
+{"qid": "amb-017", "question": "Who gave the narrator shelter when he first arrived in New York?", "gold": "history/frederick_douglass", "entity": "New York", "note": "Ruggles；New York 四源"}
+{"qid": "amb-018", "question": "Who is the eldest of the four March girls?", "gold": "literature/little_women", "entity": "March", "note": "March 双源 lw:316/np:33/ph:17；避开 march sisters 别名用 March girls"}
+{"qid": "amb-019", "question": "Why did Miss March cut off and sell her hair?", "gold": "literature/little_women", "entity": "March", "note": "Miss March 不触发 jo march/march sisters 别名"}
+{"qid": "amb-020", "question": "Why does Don Pedro refuse in the play the sisters perform?", "gold": "literature/little_women", "entity": "Don Pedro", "note": "Don Pedro 双源 lw:9/ph:5（西班牙总督）"}
+{"qid": "amb-021", "question": "Who is John Brooke and whom does he marry?", "gold": "literature/little_women", "entity": "John", "note": "John 六源；micro 有 John Needham 强干扰"}
+{"qid": "amb-022", "question": "Which of the March sisters gets to travel to Paris?", "gold": "literature/little_women", "entity": "Paris", "note": "Paris 七源（Amy）"}
+{"qid": "amb-023", "question": "How does the narrator describe the women of New Bedford?", "gold": "literature/moby_dick", "entity": "New Bedford", "note": "fd 干扰强（Douglass 也是 New Bedford 叙事）"}
+{"qid": "amb-024", "question": "Off which cape had the speaker seen the whale at a distance?", "gold": "literature/moby_dick", "entity": "Cape", "note": "Cape 三源，np 的 Cape York 干扰"}
+{"qid": "amb-025", "question": "In which ocean does the sailor believe the whale is only found?", "gold": "literature/moby_dick", "entity": "Pacific", "note": "Pacific 双源 ph:35/md:34"}
+{"qid": "amb-026", "question": "Where had Greenland whaling ships been seen in London centuries ago?", "gold": "literature/moby_dick", "entity": "Greenland", "note": "np:81 干扰强"}
+{"qid": "amb-027", "question": "What did the whalers call the feeding ground near Japan?", "gold": "literature/moby_dick", "entity": "Japan", "note": "Japan 三源 ph:59/mb:15"}
+{"qid": "amb-028", "question": "What sermon did the old cook of the ship preach?", "gold": "literature/moby_dick", "entity": "Cook", "note": "Cook 双源，与 amb-006 互为镜像（同一词两个 gold）"}
+{"qid": "amb-029", "question": "What did van Leeuwenhoek describe in his letters to the Royal Society?", "gold": "science/Microbiology-WEB", "entity": "Royal Society", "note": "Royal Society 双源 bf:6/mb:6"}
+{"qid": "amb-030", "question": "What position did John Needham take in the debate over spontaneous generation?", "gold": "science/Microbiology-WEB", "entity": "John", "note": "John 六源，lw 的 John Brooke 干扰"}
+{"qid": "amb-031", "question": "Which American society's curriculum guidelines does the microbiology text align to?", "gold": "science/Microbiology-WEB", "entity": "American", "note": "American 六源（ph:111/np:40/mb:48）"}
+{"qid": "amb-032", "question": "What did John Snow's studies track during the cholera outbreak in London?", "gold": "science/Microbiology-WEB", "entity": "Snow", "note": "Snow 四源 np:155(天气!)/lw:33/md:41/mb:24 —— 最强陷阱：np 的 Snow 全是天气"}
+{"qid": "amb-033", "question": "Which country does Paine call the parent of America?", "gold": "history/common_sense", "entity": "America", "note": "America 八源；答案本身是 Europe（回旋镖题）"}
+{"qid": "amb-034", "question": "What does Paine say about the origin of the English constitution?", "gold": "history/common_sense", "entity": "English", "note": "English 四源 ph:79/md:46/bf:34/lw:25"}
+{"qid": "amb-035", "question": "Why does Paine argue that reconciliation with England is impossible?", "gold": "history/common_sense", "entity": "England", "note": "England 六源"}
+{"qid": "amb-036", "question": "What does Keynes mean when he says England stands outside Europe?", "gold": "history/economic_peace", "entity": "Europe", "note": "Europe 五源 ep:153/ph:104 最高"}
+{"qid": "amb-037", "question": "What does Keynes predict will happen to Europe if the treaty is enforced?", "gold": "history/economic_peace", "entity": "Europe", "note": "同上"}
+{"qid": "amb-038", "question": "What did Clemenceau want for France at the peace conference?", "gold": "history/economic_peace", "entity": "France", "note": "France 四源 ep:156/ph:42/bf:16/cs:8"}
+{"qid": "amb-039", "question": "How does Keynes describe the effect of reparations on Germany?", "gold": "history/economic_peace", "entity": "Germany", "note": "Germany 三源 ep:513/ph:8/lw:6"}
+{"qid": "amb-040", "question": "Why was Keynes in Paris after the war?", "gold": "history/economic_peace", "entity": "Paris", "note": "Paris 七源 bf:20/np:10/lw:14/ph:13/md:8/mb:29"}
+{"qid": "amb-041", "question": "What did the English do in Manila in 1763?", "gold": "history/philippines", "entity": "English", "note": "English 四源；Manila 事实已 grep 验证"}
+{"qid": "amb-042", "question": "Who won the war between England and France over India and America?", "gold": "history/philippines", "entity": "French", "note": "French 四源 ep:73/bf:27/lw:26/md:19；ep 干扰强"}
+{"qid": "amb-043", "question": "What northern return route across the Pacific was discovered?", "gold": "history/philippines", "entity": "Pacific", "note": "Pacific 双源 md:34 干扰"}
+{"qid": "amb-044", "question": "How did the United States come to acquire the Philippines?", "gold": "history/philippines", "entity": "United States", "note": "United States 四源 mb:167/ep:70/np:25；mb 干扰强"}
+{"qid": "amb-045", "question": "What was the relation of the United States to the South American republics?", "gold": "history/philippines", "entity": "South America", "note": "South America 双源 mb:13"}
+{"qid": "amb-046", "question": "What religion did Spain introduce to the islands?", "gold": "history/philippines", "entity": "Spain", "note": "Spain 三源 ph:214/cs:5/md:5"}
+{"qid": "amb-047", "question": "How long did Spain rule the Philippines?", "gold": "history/philippines", "entity": "Spain", "note": "同上"}
+{"qid": "amb-048", "question": "What role did China play in the trade of the islands?", "gold": "history/philippines", "entity": "China", "note": "China 四源 ph:75/mb:16/md:9/lw:9"}
+{"qid": "amb-049", "question": "What did Japan do to the Philippines during the Second World War?", "gold": "history/philippines", "entity": "Japan", "note": "Japan 三源 md:21/mb:15 干扰"}
+{"qid": "amb-050", "question": "Which Spanish colony in America did the galleons sail from to the Philippines?", "gold": "history/philippines", "entity": "America", "note": "America 八源（答案 Mexico）"}
